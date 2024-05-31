@@ -4,7 +4,7 @@ import {askName} from '../src/cli.js';
 
 let name = askName()
 
-let genereate = () => {
+export let genereate = () => {
     let min = Math.ceil(0);
     let max = Math.floor(1000);
     return Math.floor(Math.random() * (max - min + 1)) + min;
