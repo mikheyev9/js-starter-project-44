@@ -3,8 +3,8 @@ import {hello, takeAnswer, generate, getRandomValue, askName} from '../src/cli.j
 
 
 function generateQuestion(){
+    hello('Welcome to the Brain Games!')
     let name = askName()
-    hello()
     let flag = 0;
     let values = ['*', '-', '+']
     while (flag !== 3){
