@@ -9,7 +9,7 @@ function generateQuestion(){
         let a = generate();
         let b = generate();
         let correctAnswer = gcd(a,b);
-        console.log(correctAnswer, 'correct')
+        //console.log(correctAnswer, 'correct')
         let answer = +takeAnswer('Find the greatest common divisor of given numbers.',
             `Question: ${a} ${b}\n`
         )
