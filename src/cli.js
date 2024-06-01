@@ -27,7 +27,7 @@ export let generate = () => {
 
 export function getRandomValue(values){
     let randomIndex = Math.floor(Math.random() * values.length)
-    return values[randomIndex]
+    return [values[randomIndex], randomIndex]
 }
 
 export function gcd(a, b) {
@@ -37,4 +37,17 @@ export function gcd(a, b) {
         a = temp;
     }
     return a;
+}
+
+export function arithmeticProgression(start, difference, length) {
+    let progression = [];
+    for (let i = 0; i < length; i++) {
+        progression.push(start + i * difference);
+    }
+    return progression;
+}
+
+export function consoleList(list, needSwapIndex){
+    let res = list.map((value, index)=> index === needSwapIndex ? '..' : value);
+    return res.join(' ')
 }
